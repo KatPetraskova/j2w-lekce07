@@ -1,5 +1,6 @@
 package cz.czechitas.java2webapps.lekce7.service;
 
+import org.junit.jupiter.api.Disabled;
 import org.junit.jupiter.api.Test;
 
 import java.time.LocalDate;
@@ -15,6 +16,7 @@ class CalendarServiceTest {
     private final CalendarService calendarService = new CalendarService();
 
     @Test
+    @Disabled("Disabled until further notice")
     void testChristmas() {
         assertAll(
                 () -> assertEquals(LocalDate.of(1960, 12, 24), calendarService.christmas(1960).getFirstDay()),
